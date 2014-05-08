@@ -14,8 +14,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.apache.commons.io.IOUtils;
-
 /**
  * This is not thread safe. Don't use the same instance of this class from multiple thread!
  * 
