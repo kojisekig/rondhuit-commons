@@ -18,6 +18,9 @@ New Features & Improvements
 * https://github.com/kojisekig/rondhuit-commons/issues/4
   add TemplateEngine
 
+* https://github.com/kojisekig/rondhuit-commons/issues/7
+  add JapaneseUtil
+
 Bug Fixes
 
 API Changes
