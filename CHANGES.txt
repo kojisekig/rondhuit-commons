@@ -15,6 +15,9 @@ New Features & Improvements
 * https://github.com/kojisekig/rondhuit-commons/issues/3
   add ResourceUtil
 
+* https://github.com/kojisekig/rondhuit-commons/issues/4
+  add TemplateEngine
+
 Bug Fixes
 
 API Changes
