@@ -1,4 +1,4 @@
 rondhuit-commons
 ================
 
-rondhuit's commons Java libraries
+RONDHUIT's commons Java libraries
