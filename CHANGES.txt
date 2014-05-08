@@ -9,6 +9,12 @@ New Features & Improvements
 * https://github.com/kojisekig/rondhuit-commons/issues/1
   add FileUtil
 
+* https://github.com/kojisekig/rondhuit-commons/issues/2
+  add PropertiesUtil
+
+* https://github.com/kojisekig/rondhuit-commons/issues/3
+  add ResourceUtil
+
 Bug Fixes
 
 API Changes
