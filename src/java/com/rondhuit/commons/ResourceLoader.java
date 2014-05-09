@@ -6,6 +6,7 @@
 package com.rondhuit.commons;
 
 import java.io.BufferedReader;
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -91,5 +92,33 @@ public final class ResourceLoader {
     InputStream is = classLoader.getResourceAsStream(file);
     if(is == null) throw new IllegalArgumentException(file + " cannot be found in your classpath!");
     return is;
+  }
+
+  /**
+   * クラスローダーを使用せず、指定されたファイル名（ディレクトリ名を含んでよい）のファイルを読み込み、レコード一覧を返す。
+   * @since 0.2
+   */
+  public static List<String> getStringList(String file, String encoding) throws IOException {
+    InputStream is = null;
+    InputStreamReader isr = null;
+    BufferedReader br = null;
+    
+    try{
+      is = new FileInputStream(file);
+      isr = new InputStreamReader(is, encoding);
+      br = new BufferedReader(isr);
+      
+      List<String> resultSet = new ArrayList<String>();
+      String line = null;
+      while((line = br.readLine()) != null){
+        resultSet.add(line.trim());
+      }
+      return resultSet;
+    }
+    finally{
+      IOUtils.closeQuietly(br);
+      IOUtils.closeQuietly(isr);
+      IOUtils.closeQuietly(is);
+    }
   }
 }
