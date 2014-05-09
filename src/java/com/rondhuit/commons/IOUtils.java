@@ -19,28 +19,28 @@ public final class IOUtils {
 
   public static void closeQuietly(InputStream is){
     try{
-      is.close();
+      if(is != null) is.close();
     }
     catch(IOException ignored){}
   }
 
   public static void closeQuietly(Reader r){
     try{
-      r.close();
+      if(r != null) r.close();
     }
     catch(IOException ignored){}
   }
 
   public static void closeQuietly(OutputStream os){
     try{
-      os.close();
+      if(os != null) os.close();
     }
     catch(IOException ignored){}
   }
 
   public static void closeQuietly(Writer w){
     try{
-      w.close();
+      if(w != null) w.close();
     }
     catch(IOException ignored){}
   }
