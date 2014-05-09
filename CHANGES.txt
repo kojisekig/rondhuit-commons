@@ -6,6 +6,9 @@ Important Notice
 
 New Features & Improvements
 
+* https://github.com/kojisekig/rondhuit-commons/issues/10
+  add the missing method to ResourceLoader
+
 Bug Fixes
 
 API Changes
