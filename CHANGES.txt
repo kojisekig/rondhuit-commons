@@ -6,6 +6,9 @@ Important Notice
 
 New Features & Improvements
 
+* https://github.com/kojisekig/rondhuit-commons/issues/11
+  add closeQuietly(Closeable) method to IOUtils class
+
 Bug Fixes
 
 API Changes

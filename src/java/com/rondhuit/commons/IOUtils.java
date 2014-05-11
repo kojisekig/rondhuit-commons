@@ -5,6 +5,7 @@
 
 package com.rondhuit.commons;
 
+import java.io.Closeable;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
@@ -16,6 +17,18 @@ import java.io.Writer;
  * @since 0.1
  */
 public final class IOUtils {
+
+  /**
+   *
+   * @param c
+   * @since 0.3
+   */
+  public static void closeQuietly(Closeable c){
+    try{
+      if(c != null) c.close();
+    }
+    catch(IOException ignored){}
+  }
 
   public static void closeQuietly(InputStream is){
     try{
