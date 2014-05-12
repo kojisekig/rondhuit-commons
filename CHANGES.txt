@@ -1,5 +1,26 @@
 RONDHUIT COMMONS Java Library change history
 
+========== 0.5-dev / YYYY-MM-DD ===================================
+
+Important Notice
+
+New Features & Improvements
+
+Bug Fixes
+
+API Changes
+
+Javadoc Fixes
+
+Project environments
+
+Tests
+
+Deprecated/Deleted Features
+
+Others
+
+
 ========== 0.4.0 / 2014-05-12 ===================================
 
 Important Notice
