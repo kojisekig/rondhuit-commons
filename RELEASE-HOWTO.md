@@ -1,6 +1,11 @@
 # HOW TO RELEASE
 
-## RELEASE 0.1.0
+## RELEASE 1.1.0 from master by executing script
+
+### execute release-master.sh with release numbers
+./release-master.sh 1.1 1.2
+
+## RELEASE 0.1.0 from master mannually
 
 ### make a branch for 0.1
 git checkout -b rel-0.1

@@ -9,6 +9,9 @@ New Features & Improvements
 * https://github.com/kojisekig/rondhuit-commons/issues/11
   add closeQuietly(Closeable) method to IOUtils class
 
+* https://github.com/kojisekig/rondhuit-commons/issues/12
+  add release-master.sh to execute the release procedure automatically.
+
 Bug Fixes
 
 API Changes
