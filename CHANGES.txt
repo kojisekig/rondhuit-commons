@@ -8,6 +8,9 @@ New Features & Improvements
 
 Bug Fixes
 
+* https://github.com/kojisekig/rondhuit-commons/issues/13
+  release-master.sh set next dev release number wrongly in version.properties on master
+
 API Changes
 
 Javadoc Fixes
