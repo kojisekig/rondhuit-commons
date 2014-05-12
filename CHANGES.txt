@@ -1,6 +1,6 @@
 RONDHUIT COMMONS Java Library change history
 
-========== 0.4-dev / YYYY-MM-DD ===================================
+========== 0.4.0 / 2014-05-12 ===================================
 
 Important Notice
 
