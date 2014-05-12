@@ -90,7 +90,7 @@ Others
 EOF
 cat CHANGES.txt.temp >> CHANGES.txt
 rm CHANGES.txt.temp
-sed -e s/$THIS_DEV_NUM/$NEXT_DEV_NUM/ version.properties > version.properties.temp
+sed -e s/$THIS_REL_NUM/$NEXT_DEV_NUM/ version.properties > version.properties.temp
 mv version.properties.temp version.properties
 git add .
 git commit -m "prepare the next release ${NEXT_BRANCH_NUM}"
