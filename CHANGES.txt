@@ -6,6 +6,9 @@ Important Notice
 
 New Features & Improvements
 
+* https://github.com/kojisekig/rondhuit-commons/issues/14
+  add release-bugfix.sh to execute the bugfix release procedure automatically
+
 Bug Fixes
 
 * https://github.com/kojisekig/rondhuit-commons/issues/13

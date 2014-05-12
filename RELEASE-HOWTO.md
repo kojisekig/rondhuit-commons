@@ -5,6 +5,11 @@
 ### execute release-master.sh with release numbers
 ./release-master.sh 1.1 1.2
 
+## RELEASE 1.1.1 (bugfix of rel-1.1.0) from rel-1.1 branch by executing script
+
+### execute release-bugfix.sh with release numbers
+./release-master.sh 1.1 1.1.1 1.1.2
+
 ## RELEASE 0.1.0 from master mannually
 
 ### make a branch for 0.1
