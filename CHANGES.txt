@@ -16,6 +16,9 @@ Bug Fixes
 
 API Changes
 
+* https://github.com/kojisekig/rondhuit-commons/issues/15
+  import UTF16, included and turbid/unturbid methods from RCSS JapaneseUtil
+
 Javadoc Fixes
 
 Project environments
