@@ -6,6 +6,9 @@ Important Notice
 
 New Features & Improvements
 
+* https://github.com/kojisekig/rondhuit-commons/issues/16
+  add ByteUtil
+
 Bug Fixes
 
 API Changes
