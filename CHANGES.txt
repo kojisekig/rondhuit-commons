@@ -6,6 +6,9 @@ Important Notice
 
 New Features & Improvements
 
+* https://github.com/kojisekig/rondhuit-commons/issues/17
+  add offset argument to int2bytes and short2bytes methods
+
 Bug Fixes
 
 API Changes

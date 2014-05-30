@@ -20,11 +20,22 @@ public final class ByteUtil {
    * @param dest 変換先。
    */
   public static void int2bytes4(int src, byte[] dest){
-    assert dest.length > 3;
-    dest[0] = (byte)((src & 0xFF000000) >>> 24);
-    dest[1] = (byte)((src & 0x00FF0000) >>> 16);
-    dest[2] = (byte)((src & 0x0000FF00) >>> 8);
-    dest[3] = (byte)((src & 0x000000FF));
+    int2bytes4(src, dest, 0);
+  }
+
+  /**
+   * 正のint整数値をoffsetで指定したオフセットからの4バイトのbyte配列に変換する。
+   * @param src 変換元。
+   * @param dest 変換先。
+   * @param offset オフセット。
+   * @since 0.6
+   */
+  public static void int2bytes4(int src, byte[] dest, int offset){
+    assert (dest.length - offset) > 3;
+    dest[offset + 0] = (byte)((src & 0xFF000000) >>> 24);
+    dest[offset + 1] = (byte)((src & 0x00FF0000) >>> 16);
+    dest[offset + 2] = (byte)((src & 0x0000FF00) >>> 8);
+    dest[offset + 3] = (byte)((src & 0x000000FF));
   }
 
   /**
@@ -33,9 +44,20 @@ public final class ByteUtil {
    * @param dest 変換先。
    */
   public static void int2bytes2(int src, byte[] dest){
-    assert dest.length > 1;
-    dest[0] = (byte)((src & 0xFF00) >>> 8);
-    dest[1] = (byte)((src & 0x00FF));
+    int2bytes2(src, dest, 0);
+  }
+
+  /**
+   * 正のint整数値をoffsetで指定したオフセットからの2バイトのbyte配列に変換する。
+   * @param src 変換元。
+   * @param dest 変換先。
+   * @param offset オフセット。
+   * @since 0.6
+   */
+  public static void int2bytes2(int src, byte[] dest, int offset){
+    assert (dest.length - offset) > 1;
+    dest[offset + 0] = (byte)((src & 0xFF00) >>> 8);
+    dest[offset + 1] = (byte)((src & 0x00FF));
   }
 
   /**
@@ -76,9 +98,20 @@ public final class ByteUtil {
    * @param dest 変換先。
    */
   public static void short2bytes2(short src, byte[] dest){
-    assert dest.length > 1;
-    dest[0] = (byte)((src & 0xFF00) >>> 8);
-    dest[1] = (byte)((src & 0x00FF));
+    short2bytes2(src, dest, 0);
+  }
+
+  /**
+   * 正負のshort整数値をoffsetで指定したオフセットからの2バイトのbyte配列に変換する。
+   * @param src 変換元。
+   * @param dest 変換先。
+   * @param offset オフセット。
+   * @since 0.6
+   */
+  public static void short2bytes2(short src, byte[] dest, int offset){
+    assert (dest.length - offset) > 1;
+    dest[offset + 0] = (byte)((src & 0xFF00) >>> 8);
+    dest[offset + 1] = (byte)((src & 0x00FF));
   }
 
   /**
