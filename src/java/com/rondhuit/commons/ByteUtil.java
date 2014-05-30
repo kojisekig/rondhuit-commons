@@ -229,8 +229,20 @@ public final class ByteUtil {
    * @return 変換後文字列。
    */
   public static String toStr1(byte[] src, String encoding){
+    return toStr1(src, 0, encoding);
+  }
+
+  /**
+   * offsetからの先頭バイトが長さを表すバイト配列から文字列への変換を行う。{@link #byteStr2bytes(String, String)}の逆変換。
+   * @param src offsetからの先頭バイトが長さを表すバイト配列。
+   * @param offset
+   * @param encoding 文字コード。
+   * @return 変換後文字列。
+   * @since 0.7
+   */
+  public static String toStr1(byte[] src, int offset, String encoding){
     try {
-      return new String(src, 1, toInt(src[0]), encoding);
+      return new String(src, offset + 1, toInt(src[offset]), encoding);
     } catch (UnsupportedEncodingException e) {
       throw new IllegalArgumentException(e);
     }
@@ -243,8 +255,20 @@ public final class ByteUtil {
    * @return 変換後文字列。
    */
   public static String toStr2(byte[] src, String encoding){
+    return toStr2(src, 0, encoding);
+  }
+
+  /**
+   * offsetからの先頭2バイトが長さを表すバイト配列から文字列への変換を行う。{@link #shortStr2bytes(String, String)}の逆変換。
+   * @param src offsetからの先頭2バイトが長さを表すバイト配列。
+   * @param offset
+   * @param encoding 文字コード。
+   * @return 変換後文字列。
+   * @since 0.7
+   */
+  public static String toStr2(byte[] src, int offset, String encoding){
     try {
-      return new String(src, 2, bytes2int(src, 0, 2), encoding);
+      return new String(src, offset + 2, bytes2int(src, offset, 2), encoding);
     } catch (UnsupportedEncodingException e) {
       throw new IllegalArgumentException(e);
     }

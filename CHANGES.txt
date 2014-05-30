@@ -6,6 +6,9 @@ Important Notice
 
 New Features & Improvements
 
+* https://github.com/kojisekig/rondhuit-commons/issues/18
+  add offset argument to toStr methods
+
 Bug Fixes
 
 API Changes
