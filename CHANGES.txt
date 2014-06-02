@@ -6,6 +6,9 @@ Important Notice
 
 New Features & Improvements
 
+* https://github.com/kojisekig/rondhuit-commons/issues/19
+  add offset argument to byte2short method
+
 Bug Fixes
 
 API Changes

@@ -120,9 +120,19 @@ public final class ByteUtil {
    * @return 変換先。
    */
   public static short bytes2short(byte[] src){
-    assert src.length >= 2;
-    short val = (short)(src[0] & 0xFF);
-    return (short)((val << 8) | (src[1] & 0xFF));
+    return bytes2short(src, 0);
+  }
+
+  /**
+   * 正負の2バイトのbyte配列をshortに変換して返す。
+   * @param src 変換元。
+   * @param offset src参照開始オフセット。
+   * @return 変換先。
+   */
+  public static short bytes2short(byte[] src, int offset){
+    assert src.length - offset >= 2;
+    short val = (short)(src[offset] & 0xFF);
+    return (short)((val << 8) | (src[offset + 1] & 0xFF));
   }
 
   /**
