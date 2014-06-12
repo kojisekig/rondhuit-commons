@@ -1,31 +1,13 @@
 RONDHUIT COMMONS Java Library change history
 
-========== 0.10-dev / YYYY-MM-DD ===================================
+========== 0.9-dev / YYYY-MM-DD ===================================
 
 Important Notice
 
 New Features & Improvements
 
-Bug Fixes
-
-API Changes
-
-Javadoc Fixes
-
-Project environments
-
-Tests
-
-Deprecated/Deleted Features
-
-Others
-
-
-========== 0.9.0 / 2014-06-12 ===================================
-
-Important Notice
-
-New Features & Improvements
+* https://github.com/kojisekig/rondhuit-commons/issues/20
+  add AssertUtil
 
 Bug Fixes
 
