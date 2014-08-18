@@ -5,11 +5,11 @@
 
 if [ -z $1 ] || [ -z $2 ] || [ -z $3 ]; then
   echo "Usage: ./release-bugfix.sh <this_branch> <this_release> <next_release>"
-  echo "  ex) ./release-bugfix.sh 1.1 1.1.0 1.1.1"
+  echo "  ex) ./release-bugfix.sh 1.1 1.1.1 1.1.2"
   exit 1
 fi
 
-# e.g. 1.1.0, 1.1.1
+# e.g. 1.1.1, 1.1.2
 THIS_BRANCH_NUM=$1
 THIS_REL_NUM=$2
 NEXT_REL_NUM=$3
