@@ -20,6 +20,9 @@ Deprecated/Deleted Features
 
 Others
 
+* https://github.com/kojisekig/rondhuit-commons/issues/22
+  add Apache License headers to all resources
+
 
 ========== 0.9.0 / 2014-06-12 ===================================
 
