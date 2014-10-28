@@ -91,7 +91,9 @@ git commit -m "prepare the next release ${NEXT_REL_NUM}"
 git push
 
 echo -e "\\n\\n\\nThe rel-${THIS_REL_NUM} has been almost prepared. Please execute the following to finalize.\\n"
-echo "1. build RONDHUIT-COMMONS-${THIS_REL_NUM}.jar file by executing ant"
-echo "2. Go to https://github.com/kojisekig/rondhuit-commons/releases/tag/rel-${THIS_REL_NUM}"
-echo "3. click [Edit tag] button and drop down the jar file to the drop down box and click [Publish release]"
+echo "1. git checkout rel-${THIS_REL_NUM}"
+echo "2. build RONDHUIT-COMMONS-${THIS_REL_NUM}.jar file by executing ant"
+echo "3. Go to https://github.com/kojisekig/rondhuit-commons/releases/tag/rel-${THIS_REL_NUM}"
+echo "4. click [Edit tag] button and drop down the jar file to the drop down box and click [Publish release]"
+echo "5. git checkout master"
 echo -e "\\nThe download link will be  https://github.com/kojisekig/rondhuit-commons/releases/download/rel-${THIS_REL_NUM}/RONDHUIT-COMMONS-${THIS_REL_NUM}.jar"
