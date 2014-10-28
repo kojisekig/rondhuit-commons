@@ -6,6 +6,9 @@ Important Notice
 
 New Features & Improvements
 
+* https://github.com/kojisekig/rondhuit-commons/issues/21
+  add closeQuietly method for RandomAccessFile
+
 Bug Fixes
 
 API Changes

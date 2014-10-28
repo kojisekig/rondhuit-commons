@@ -21,6 +21,7 @@ import java.io.Closeable;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.io.RandomAccessFile;
 import java.io.Reader;
 import java.io.Writer;
 
@@ -38,6 +39,18 @@ public final class IOUtils {
   public static void closeQuietly(Closeable c){
     try{
       if(c != null) c.close();
+    }
+    catch(IOException ignored){}
+  }
+
+  /**
+   *
+   * @param raf
+   * @since 0.10
+   */
+  public static void closeQuietly(RandomAccessFile raf){
+    try{
+      if(raf != null) raf.close();
     }
     catch(IOException ignored){}
   }
